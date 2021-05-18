@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+.hide {
+  display: none;
+}
+
+.notify {
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+  padding: 15px 2px;
+  top: 50%;
+  left: 0;
+  right: 0;
+  text-align: center
+}
+
+.notify.success {
+  background-color: #e62e8b;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.4);
+  color: #fff;
+}
+
+.notify.error {
+  background: -webkit-linear-gradient(#ffa0ac 0%, #ffa9b4 99%);
+  background: -o-linear-gradient(#ffa0ac 0%, #ffa9b4 99%);
+  background: linear-gradient(#ffa0ac 0%, #ffa9b4 99%);
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.4);
+  color: #fff;
+}

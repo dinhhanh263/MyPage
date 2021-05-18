@@ -1,0 +1,1057 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+/* ===== Universal Reset ===== */
+html{height:100%;}
+body { 
+	background:#FFFFFF; 
+	height:100%; 
+	font-size:16px;
+	font-family:"Helvetica Neue",
+    Arial,
+    "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans",
+    Meiryo,
+	sans-serif;
+	color: #333;
+}
+*{
+	margin:0;
+	padding:0;
+}
+
+body > #container  {
+    height: auto;
+}
+
+div{
+	box-sizing: border-box;
+}
+
+
+img {
+	border: none;
+}
+
+.bn {
+	margin-top: 10px;
+}
+.sp_only{ display:none}
+
+h1,h2,h3{ padding:0; margin:0; color:#333; font-weight:normal}
+a,
+a:visited{ text-decoration:none;}
+a:hover{ text-decoration:none!important}
+
+ul,li{list-style-type:none;}
+
+@media(max-width:768px){
+	body{font-size: 14px;}
+}
+
+@media(max-width:480px){
+	body{font-size: 14px;}
+	.pc_only{ display:none}
+	.sp_only{ display:inline}
+	img{ max-width: 100%;}
+}
+
+
+/* ==== clearfix ==== */
+.clearfix:after {content: "."; display: block; clear: both; height: 0; visibility: hidden;}
+.clearfix { min-height: 1px;}
+
+.container{
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.flex{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+@media(max-width:768px){
+	.container{
+		margin: 0 15px;
+	}
+	.flex{
+		justify-content: center;
+	}
+}
+@media(max-width:480px){
+	.container{
+		width: 100%;
+		padding: 0 15px;
+		margin: 0;
+	}
+	.flex{
+		display: block;
+	}
+}
+	
+
+#mainImg{ 
+	width:100%;
+	padding-bottom:0px;
+	min-height:638px;
+	background:url(../img/epilator/mainImg.jpg) no-repeat center center/cover;
+	padding-top:20px;
+	text-align:center;
+	box-sizing:border-box;
+	position:relative;
+}
+
+#mainImg h1{
+	font-size:60px;
+	padding-bottom: 50px;
+}
+#mainImg h1 span{
+	font-size: 52px;
+	color: #EFA1BC;
+	display: block;
+}
+#mainImg p.lead{
+	line-height:3em;
+	font-size:14px
+}
+#mainImg .productName{
+	position: absolute;
+	width: 40%;
+	background-color: rgba(255,255,255,0.8);
+	bottom:40px;
+	left: 50%;
+	margin-left: -20%;
+	padding: 10px;
+	text-align: center;
+	font-size: 24px;
+}
+
+@media(max-width:768px){
+	#mainImg{
+		min-height: 338px;
+	}
+	#mainImg h1{
+	font-size:30px;
+	padding-bottom: 10px;
+	}
+	#mainImg h1 span{
+	font-size: 20px;
+	}
+	#mainImg p.lead{
+		font-size:12px;
+		line-height:2em;
+	}
+	#mainImg .productName{
+		font-size: 14px;
+		bottom:10px;
+	}
+}
+
+@media(max-width:480px){
+	#mainImg{
+		min-height:558px;
+		background:#f4f2f7 url(../img/epilator/mainImg_sp.jpg) no-repeat center bottom/100%;
+		padding:40px 20px 20px 20px;
+		text-align:left;
+		box-sizing:border-box;
+		position:relative;
+	}
+	#mainImg h1{
+	font-size:32px;
+	line-height: 1.3em;
+	padding-bottom: 30px;
+	}
+	#mainImg h1 span{
+	font-size: 22px;
+	}
+	#mainImg p.lead{
+		font-size:12px;
+		line-height: 2em;
+	}
+	#mainImg .productName{
+		display:none;
+	}
+}
+
+.epi-nav nav{
+	padding: 50px 0; 
+	max-width: 1000px;
+	margin:  0 auto;
+	box-sizing: border-box;
+}
+.epi-nav nav ul{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.epi-nav nav ul li{
+	width: 48%;
+}
+.epi-nav nav ul li a{
+	display: block;
+	padding-top: 200px;
+	text-align: center;
+	font-size: 20px;
+	border:1px solid #ccc;
+	padding-bottom: 30px;
+	position: relative;
+	font-weight: bold;
+	text-decoration: none;
+	color: #333;
+}
+.epi-nav nav ul li a small{
+	font-size: 18px;
+}
+.epi-nav nav ul li:first-child a{
+	background: url(../img/epilator/epc-product.png) no-repeat center 30px;
+}
+.epi-nav nav ul li:last-child a{
+	background: url(../img/epilator/sfs-product.png) no-repeat center 20px;
+}
+.epi-nav nav ul li a:hover{
+	background-color: #f3f3f3;
+}
+
+.epi-nav nav ul li a:after{
+	content: "";
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 12px 7px 0 7px;
+	border-color: #99d6ea transparent transparent transparent;
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	margin-left: -7px;
+}
+
+#faq a {
+	color: #333;
+}
+@media(max-width:768px){
+	.epi-nav nav{
+		margin: 0 15px;
+	}
+	.epi-nav nav ul li a{
+		padding-top: 150px;
+		font-size: 18px;
+	}
+	.epi-nav nav ul li:first-child a{
+		background: url(../img/epilator/epc-product.png) no-repeat center 30px/70%;
+	}
+	.epi-nav nav ul li:last-child a{
+		background: url(../img/epilator/sfs-product.png) no-repeat center 10px/28%;
+	}
+}
+
+@media(max-width:480px){
+	.epi-nav nav{
+		margin: 0;
+		padding:50px 15px 0px 15px;
+		width: 100%;
+	}
+	.epi-nav nav ul li{
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	.epi-nav nav ul li a{
+		padding-top: 30px;
+		font-size: 14px;
+		text-align: left;
+	}
+	.epi-nav nav ul li a small{
+		font-size: 12px;
+	}
+	.epi-nav nav ul li:first-child a{
+		background: url(../img/epilator/epc-product.png) no-repeat 10px 30px/30%;
+		padding-left: 36%;
+	}
+	.epi-nav nav ul li:last-child a{
+		background: url(../img/epilator/sfs-product.png) no-repeat 40px 15px/15%;
+		padding-left: 36%;
+	}
+}
+
+/*コンテンツ基本*/
+section{
+	padding:60px 0;
+}
+
+section h2{
+	text-align:left;
+	font-size:40px;
+	padding:0;
+	margin:0;
+	font-weight:bolder;
+}
+section h3{
+	text-align:center;
+	font-size:24px;
+	position: relative;
+	margin-bottom: 30px;
+	font-weight: bold;
+}
+section h3:after{
+	content:"";
+	width:100%;
+	height:1px;
+	background-color: #333;
+	display:inline-block;
+	top:50%;
+	left: 0;
+	position:absolute;
+}
+
+section h3 span{
+	display:inline-block;
+	padding:0 15px;
+	position:relative;
+	background: white;
+	z-index: 100;
+}
+
+
+@media(max-width:834px){
+	section{
+	padding:30px 0;
+	}
+}
+
+
+@media(max-width:480px){
+	section{
+	padding:20px 0;
+	}
+	section h2{
+		font-size:18px
+	}
+	section h3{
+		font-size:18px;
+		margin-bottom: 10px;
+	}
+	section h3 span{
+		padding: 0;
+	}
+	section h3:after{
+		display: none;
+	}
+}
+
+
+.product-content .head{
+	position: relative;
+	background: #F4F4F4;
+	min-height: 380px;
+	padding-top:25%;
+}
+.product-content .head .head-img{
+	width: 50%;
+	min-height: 400px;
+	padding-top:25%;
+	z-index: 10;
+	position: absolute;
+	top: -50px;
+	left: 0;
+}
+#sfs.product-content .head .head-img{
+	width: 50%;
+	min-height: 400px;
+	padding-top:25%;
+	z-index: 10;
+	position: absolute;
+	top: -50px;
+	left: 50%;
+}
+#epc.product-content .head .head-img{
+	background: url(../img/epilator/epc-img.jpg) no-repeat center bottom/cover;
+}
+#sfs.product-content .head .head-img{
+	background: url(../img/epilator/sfs-img.jpg) no-repeat center bottom/cover;
+}
+
+.product-content .head .head-lead{
+	position: absolute;
+	top: 50px;
+	left: 49%;
+	z-index: 100;
+}
+
+#sfs.product-content .head .head-lead{
+	position: relative;
+	top: 70px;
+	left: auto;
+	max-width: 1000px;
+	margin:-25% auto 0 auto;
+}
+.product-content .head .head-lead p{
+	font-size: 18px;
+	line-height: 2em;
+	padding-bottom: 20px;
+}
+.product-content .head .head-lead strong{
+	display: inline-block;
+	background: #EFA1BC;
+	border-radius: 30px;
+	font-size: 20px;
+	font-weight: normal;
+	color: white;
+	padding: 3px 10px;
+}
+.product-content .head .head-lead h2{
+	padding-top: 10px;
+	font-size: 46px;
+	line-height: 1.4em;
+	font-weight: normal;
+}
+
+@media(max-width:768px){
+	#sfs.product-content .head .head-lead{
+		margin: -25% 15px 0 15px;
+	}
+	.product-content .head .head-lead p{
+		font-size: 16px;
+	}
+	.product-content .head .head-lead strong{
+		font-size: 16px;
+	}
+	.product-content .head .head-lead h2{
+		font-size: 40px;
+	}
+}
+
+@media(max-width:480px){
+	.product-content .head{
+		min-height: auto;
+		padding-top: 0;
+		background: none;
+	}
+	.product-content .head .head-img,
+	#sfs.product-content .head .head-img,
+	.product-content .head .head-lead,
+	#sfs.product-content .head .head-lead{
+		width:auto;
+		left: 0;
+		position: relative;
+		top: auto;
+		margin: auto;
+	}
+	#sfs.product-content .head .head-lead,
+	.product-content .head .head-lead{
+		background: #F4F4F4;
+		margin: 0 15px;
+		z-index: 1000;
+		padding: 10px;
+	}
+	.product-content .head .head-img,
+	#sfs.product-content .head .head-img{
+		height: 250px;
+		padding-top: 0;
+		min-height: auto;
+		margin-top: -15px;
+		z-index: 100;
+	}
+	.product-content .head .head-lead h2{
+		font-size: 28px;
+	}
+	.product-content .head .head-lead p{
+		font-size: 14px;
+		line-height: 1.6em;
+		padding-bottom: 10px;
+	}
+	.product-content .head .head-lead strong{
+		font-size: 14px;
+	}
+}
+
+.product-content p.right{
+	max-width: 1000px;
+	margin: 10px auto;
+	font-size: 11px;
+	text-align: right;
+}
+
+.product-content .cont{
+	padding: 50px 0 30px 0;
+}
+
+.product-content .cont .exp{
+	width: 672px;
+}
+.product-content .cont .exp p{
+	line-height: 1.8em;
+}
+.product-content .cont .exp p strong{
+	font-weight: bold;
+	font-size: 18px;
+}
+@media(max-width:768px){
+	.product-content .cont h3 span br.sp_only{
+		display: inline;
+	}
+	.product-content .cont .flex img{
+		padding-bottom: 20px;
+	}
+}
+
+
+@media(max-width:480px){
+	.product-content .cont{
+		padding-bottom: 0;
+	}
+	#sfs.product-content .cont{
+		padding-top: 30px;
+	}
+	.product-content p.right{
+		width: auto;
+		margin: 5px 15px;
+		text-align: left;
+	}
+	.product-content .cont .exp{
+		width: 100%;
+	}
+}
+
+.product-content .cont .exp .check{
+	margin: 40px 0 0 0;
+	background: #F4F4F4;
+	padding: 30px 30px 10px 30px;
+	position: relative;
+}
+.product-content .cont .exp .check h4{
+	font-size: 18px;
+	font-weight: bold;
+	position: absolute;
+	top: -15px;
+	left: 0;
+	text-align: center;
+	width: 100%;
+}
+.product-content .cont .exp .check h4 span{
+	position: relative;
+	display: inline-block;
+}
+.product-content .cont .exp .check h4 span:before{
+	content: "";
+	display: inline-block;
+	-webkit-transform: skewX(-135deg);
+	-moz-transform: skewX(-135deg);
+	transform: skewX(-135deg);
+	border-right: 1px solid #333;
+	height: 20px;
+	margin-right: 20px;
+	vertical-align: middle;
+}
+.product-content .cont .exp .check h4 span:after{
+	content: "";
+	display: inline-block;
+	-webkit-transform: skewX(135deg);
+	-moz-transform: skewX(135deg);
+	transform: skewX(135deg);
+	border-right: 1px solid #333;
+	height: 20px;
+	margin-left: 20px;
+	vertical-align: middle;
+}
+
+.product-content .cont .exp .check ul {
+	padding-top: 10px;
+}
+.product-content .cont .exp .check ul li{
+	margin-bottom: 15px;
+	background: url(../img/epilator/heart.png) no-repeat  left 3px;
+	padding-left: 22px;
+	font-weight: bold;
+}
+
+
+@media(max-width:480px){
+	.product-content .cont .flex img{
+		width: 50%;
+		display: block;
+		margin: 10px auto;
+	}
+	.product-content .cont .exp p strong{
+		font-size: 14px;
+	}
+	.product-content .cont .exp .check{
+		padding: 15px 15px 5px;
+	}
+	.product-content .cont .exp .check h4{
+		font-size: 16px;
+		top:-10px;
+	}
+}
+
+div.border{
+	background: url("../img/epilator/border.png") repeat;
+	padding: 7px;
+	margin-top: 50px;
+}
+div.border>div{
+	background: white;
+	padding: 20px 20px 30px 20px;
+	text-align: center;
+}
+div.border>div .flex{
+	justify-content: center;
+}
+div.border>div h3{
+	display: inline-block;
+	background: #EFA1BC;
+	color: white;
+	padding: 5px 20px;
+	top: -50px;
+	margin-bottom: -20px;
+}
+div.border>div h3::after{
+	display: none;
+}
+div.border>div h4{
+	font-size: 18px;
+	padding-bottom: 20px;
+}
+div.border>div h4 span{
+	position: relative;
+	display: inline-block;
+}
+div.border>div h4 span:before{
+	content: "";
+	display: inline-block;
+	-webkit-transform: rotate(135deg);
+	-moz-transform: rotate(135deg);
+	transform: rotate(135deg);
+	border-right: 1px solid #333;
+	border-bottom: 1px solid #333;
+	width: 15px;
+	height: 15px;
+	margin-right: 0px;
+	vertical-align: middle;
+}
+div.border>div h4 span:after{
+	content: "";
+	display: inline-block;
+	-webkit-transform: rotate(135deg);
+	-moz-transform: rotate(135deg);
+	transform: rotate(135deg);
+	border-left: 1px solid #333;
+	border-top: 1px solid #333;
+	width: 15px;
+	height: 15px;
+	margin-left: 0px;
+	vertical-align: middle;
+}
+div.border div .txt{
+	padding-left: 20px;
+}
+div.border div .txt p{
+	text-align: left;
+	line-height: 2em;
+	padding-bottom: 20px;
+}
+
+@media(max-width:768px){
+	div.border>div h3 br.sp_only,
+	div.border>div h4 span br.sp_only{
+		display: inline;
+	}
+	div.border>div h4 span:before,
+	div.border>div h4 span:after{
+		position: absolute;
+		top: 20px;
+		left: -20px;
+	}
+	div.border>div h4 span:after{
+		left: auto;
+		right: -20px;
+	}
+	div.border div .txt{
+	}
+	#epc div.border>div .flex{
+		align-items: flex-start;
+	}
+	#epc div.border>div .flex img{
+		width: 49%;
+	}
+	#epc div.border>div .flex .txt{
+		width: 49%;
+	}
+	#epc div.border>div .flex .txt br{
+		display: none;
+	}
+}
+
+
+@media(max-width:480px){
+	div.border>div{
+		padding: 20px 10px 0px 10px;
+	}
+	div.border>div h3{
+		padding: 5px;
+		font-size: 16px;
+		top: -40px;
+		margin-bottom: -20px;
+	}
+	#sfs div.border>div h3{
+		top: -50px;
+	}
+	div.border>div h4{
+		margin-top: -20px;
+		font-size: 14px;
+	}
+
+	div.border>div h4 span:before,
+	div.border>div h4 span:after{
+		position: absolute;
+		top: 10px;
+		left: -10px;
+	}
+	div.border>div h4 span:after{
+		left: auto;
+		right: -10px;
+	}
+	#epc div.border>div .flex img{
+		width: 100%;
+	}
+	#epc div.border>div .flex .txt{
+		width: 100%;
+	}
+	div.border div .txt{
+		padding-left: 0;
+		padding-top: 20px;
+	}
+	div.border div .txt p{
+		line-height: 1.6em;
+	}
+	div.border div .txt p br{
+		display: none;
+	}
+}
+
+div.border div .lip{
+	width: 48%;
+	line-height: 2em;
+}
+div.border div .lip img{
+	padding-bottom: 20px;
+}
+div.border div .lip p{
+	text-align: left;
+	padding-left: 20px;
+}
+div.border div .table{
+	width: 50%;
+	font-size: 14px;
+}
+div.border div .table table{
+	width: 100%;
+	border-left:2px solid #99D6EA;
+	border-top:2px solid #99D6EA;
+	border-collapse: collapse;
+}
+div.border div .table table tr td,
+div.border div .table table tr th{
+	border-right:2px solid #99D6EA;
+	border-bottom:2px solid #99D6EA;
+	text-align: center;
+	padding: 5px;
+}
+div.border div .table table tr td{
+	width: 25%;
+	font-weight: bold;
+}
+div.border div .table table tr th{
+	background: #F0F9FC;
+}
+div.border div .table table tr td.kireimo{
+	background:#FFFBEA;
+	position: relative;
+}
+div.border div .table table tr td small{
+	font-size: 10px;
+	font-weight: normal;
+}
+div.border div .table table tr td.kireimo small{
+	color: #EFA1BC;
+	vertical-align: top;
+	position: absolute;
+	top: 5px;
+	right: 35px;
+}
+div.border div .table table tr td strong{
+	font-size: 18px;
+}
+p.chu{text-align: right;}
+p.chu span{ color: #EFA1BC;}
+
+
+@media(max-width:768px){
+	div.border div .lip p{
+		padding-left: 0px;
+		padding-right: 10px;
+	}
+	div.border div .lip p br.mid{
+		display: none;
+	}
+	div.border div .table table tr:first-child td br{
+		display: none;
+	}
+	div.border div .table table tr td.kireimo small{
+		top: 5px;
+		right: 15px;
+	}
+}
+
+
+@media(max-width:480px){
+	div.border div .lip,
+	div.border div .table{
+		width: 100%;
+	}
+	div.border div .lip{
+		margin-top: -20px;
+		margin-bottom: 20px;
+	}
+	div.border div .table{
+		padding-bottom: 10px;
+		font-size: 11px;
+	}
+	div.border div .lip h4,
+	div.border div .table h4{
+		margin-top: 0;
+	}
+	div.border div .table h4{
+		padding-bottom: 10px;
+	}
+	div.border div .lip img{
+		width: 50%;
+		display: block;
+		margin:auto;
+	}
+	div.border div .lip p{
+	}
+	div.border div .lip p br.mid{
+		display: inline;
+	}
+	div.border div .table table tr td strong{
+		font-size: 14px;
+	}
+	div.border div .table table tr:first-child td br{
+		display: none;
+	}
+	div.border div .table table tr td.kireimo small{
+		top: 5px;
+		right: 15px;
+	}
+}
+
+
+.product-content .inq{
+	padding: 70px 0;
+	min-height: 200px;
+}
+.product-content .inq .flex{
+	align-items: center;
+}
+.product-content .inq .flex img{
+	width: 25%;
+}
+#sfs.product-content .inq .flex img{
+	width: auto;
+	padding-left: 80px;
+}
+.product-content .inq .flex p{
+	font-size: 20px;
+	font-weight: bold;
+	width: 70%;
+}
+.product-content .inq .flex p span {
+	font-weight: bold;
+}
+
+@media(max-width:768px){
+	.product-content .inq .flex p{
+		font-size: 16px;
+	}
+	.product-content .inq .flex img{
+		display: block;
+		margin:  auto;
+		width: 20%;
+		padding-bottom: 10px;
+	}
+	#sfs.product-content .inq .flex img{
+		padding-left: 0;
+		width: 10%;
+	}
+}
+
+@media(max-width:480px){
+	.product-content .inq{
+		padding: 30px 0 0 0;
+		min-height:auto;
+	}
+	.product-content .inq .flex img{
+		display: block;
+		margin:  auto;
+		width: 50%;
+		padding-bottom: 10px;
+	}
+	#sfs.product-content .inq .flex img{
+		padding-left: 0;
+		width: 30%;
+	}
+	#sfs.product-content .inq{
+		padding-bottom: 30px;
+	}
+	.product-content .inq .flex p{
+		font-size: 14px;
+		text-align: center;
+		width: 100%;
+	}
+}
+
+
+section#faq h2{
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+section#faq div.box{
+	border: 1px solid #ccc;
+	padding: 30px;
+	margin-bottom: 30px;
+}
+
+section#faq div.box>div{
+	font-weight: bold;
+	display: flex;
+	align-items: center;
+	margin-bottom: 25px;
+	flex-wrap: wrap;
+}
+section#faq div.box>div.a{
+	align-items:stretch;
+	font-weight: normal;
+	margin-bottom: 0;
+}
+
+section#faq div.box>div a{
+	text-decoration: underline;
+}
+
+section#faq a.open,
+section#faq a.close{
+	display: none;
+	text-decoration: none;
+}
+
+
+section#faq div.box>div:before{
+	font-size: 18px;
+	color: white;
+	display: inline-block;
+	border-radius: 50%;
+	width: 36px;
+	height: 36px;
+	padding-top: 5px;
+	box-sizing: border-box;
+	text-align: center;
+	margin-right: 10px;
+	font-weight: bold;
+}
+section#faq div.box>div.q:before{
+	content: "Q";
+	background: #99D6EA;
+}
+section#faq div.box>div.a:before{
+	content: "A";
+	background: #EFA1BC;
+	margin-top: -5px;
+}
+@media(max-width:768px){
+	section#faq div.box>div{
+		position: relative;
+		padding-left: 30px;
+	}
+	section#faq div.box>div:before{
+		font-size: 16px;
+		width: 26px;
+		height: 26px;
+		padding-top: 2px;
+		position: absolute;
+		top: -2px;
+		left: 0;
+	}
+	section#faq div.box>div.a:before{
+		margin-top: 0;
+		top:0;
+	}
+}
+
+@media(max-width:480px){
+	section#faq h2{
+		font-size: 20px;
+	}
+	section#faq div.box{
+		padding: 15px;
+		margin-bottom: 20px;
+		position: relative;
+	}
+	section#faq div.box>div{
+		position: relative;
+		padding-left: 30px;
+	}
+	section#faq div.box>div:before{
+		font-size: 16px;
+		width: 26px;
+		height: 26px;
+		padding-top: 2px;
+		position: absolute;
+		top: -2px;
+		left: 0;
+	}
+	section#faq div.box>div.a{
+		padding-bottom: 20px;
+	}
+	section#faq div.box>div.a:before{
+		margin-top: 0;
+		top:0;
+	}
+	section#faq a.open{
+		display: block;
+		text-align: right;
+		color: #EFA1BC;
+		font-size: 12px;
+		position: absolute;
+		right:10px;
+		bottom: 10px;
+		width: 100%;
+		height: 1.5em;
+	}
+	section#faq a.open:before{
+		content: "回答を見る";
+		color: #EFA1BC;
+		display: inline-block;
+	}
+	section#faq a.open.close:before{
+		content: "閉じる";
+		color: #EFA1BC;
+		display: inline-block;
+	}
+	section#faq a.open:after{
+		content: "";
+		display: inline-block;
+		vertical-align: middle;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 3px 0 3px 6px;
+		border-color: transparent transparent transparent #EFA1BC;
+		margin-left: 3px;
+	}
+	section#faq div.box>div.a{
+		display: none;
+	}
+	
+}

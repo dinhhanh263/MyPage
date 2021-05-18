@@ -1,0 +1,384 @@
+[2021-04-26 19:19:03] local.INFO: Request Url : https://function.kireimo-dev.jp/api/v1/kireimo/auth/mypageAuth
+Request : {"customerNo":"SJ01162283","password":"curryhouse"}
+Result : Array
+(
+    [apiStatus] => 200
+    [body] => Array
+        (
+            [authResult] => 1
+            [customerId] => 162283
+        )
+
+)
+  
+[2021-04-26 19:19:03] local.INFO: running time : 1.0775139331818[s]  
+[2021-04-26 19:19:03] local.INFO: used memory : 0.28453826904297[MB]  
+[2021-04-26 19:19:05] local.INFO: Request Url : https://function.kireimo-dev.jp/api/v1/kireimo/customer/162283
+Request : 
+Result : Array
+(
+    [apiStatus] => 200
+    [body] => Array
+        (
+            [customerNo] => SJ01162283
+            [ctype] => 101
+            [name1] => システムテスト
+            [name2] => 予約
+            [nameKana1] => システムテスト
+            [nameKana2] => ヨヤク
+            [birthday] => 1996-10-20
+            [tel] => 000-0000-1234
+            [sex] => 2
+            [mail] => yoshino.kato@vielis.co.jp
+            [zip] => 000-0003
+            [prefCd] => 11
+            [address] => 住所テスト
+            [pairNameKana1] => 
+            [pairNameKana2] => 
+            [hopesDiscountFlg] => 
+            [hopeCampaign] => ハンド脱毛
+            [adcodeId] => 
+            [bank] => 
+            [smartpitNo] => 2082349284226
+            [virtualBank] => Array
+                (
+                    [branchName] => ぼたん支店
+                    [branchNo] => 884
+                    [virtualNo] => 0539004
+                )
+
+            [geneInfo] => Array
+                (
+                    [sugarRiskId] => 1
+                    [proteinRiskId] => 3
+                    [fatRiskId] => 2
+                    [geneTypeId] => 11
+                    [obesityRiskId] => 1
+                    [obesityRiskLevel] => 4
+                    [intakeRestrictionId] => 3
+                    [obesityPatternId] => 7
+                    [obesityRiskEvaluationId] => 4
+                    [mainSupplementId] => 3
+                    [subSupplementId] => 1
+                    [mainTreatmentEquipmentId] => 4
+                    [subTreatmentEquipmentId] => 2
+                    [recommendedExercise] => 2
+                )
+
+            [nutritionLackInfo] => Array
+                (
+                    [vitaminB1Lack] => 
+                    [vitaminB2Lack] => 
+                    [vitaminB6Lack] => 
+                    [pantothenicAcidLack] => 
+                    [lCarnitineLack] => 
+                    [niacinLack] => 
+                )
+
+        )
+
+)
+  
+[2021-04-26 19:19:05] local.INFO: running time : 1.0797960758209[s]  
+[2021-04-26 19:19:05] local.INFO: used memory : 0.29603576660156[MB]  
+[2021-04-26 19:19:05] local.INFO: Request Url : https://function.kireimo-dev.jp/api/v1/kireimo/customer/162283/contracts
+Request : 
+Result : Array
+(
+    [apiStatus] => 200
+    [count] => 7
+    [body] => Array
+        (
+            [0] => Array
+                (
+                    [contractId] => 100065
+                    [status] => 4
+                    [oldContractId] => 0
+                    [courseId] => 11
+                    [contractDate] => 2016-09-01
+                    [latestDate] => 0000-00-00
+                    [endDate] => 2020-08-31
+                    [times] => 12
+                    [rTimes] => 0
+                    [startYm] => 0
+                    [extensionEndDate] => 
+                    [courseTreatmentType] => 0
+                    [courseType] => 0
+                    [courseName] => 全身33ヵ所パックコース(12回)
+                    [courseZeroFlg] => 
+                    [courseNewFlg] => 
+                    [courseIntervalDate] => 
+                    [courseSalesStartDate] => 
+                    [courseSalesEndDate] => 2019-11-30
+                    [courseReservationMaxTimes] => 1
+                    [courseMinorPlanFlg] => 
+                )
+
+            [1] => Array
+                (
+                    [contractId] => 100066
+                    [status] => 4
+                    [oldContractId] => 100065
+                    [courseId] => 82
+                    [contractDate] => 2016-09-05
+                    [latestDate] => 2018-03-30
+                    [endDate] => 0000-00-00
+                    [times] => 2
+                    [rTimes] => 1
+                    [startYm] => 201710
+                    [extensionEndDate] => 
+                    [courseTreatmentType] => 0
+                    [courseType] => 1
+                    [courseName] => 新月額制33ヵ所（2ヵ月分）
+                    [courseZeroFlg] => 
+                    [courseNewFlg] => 1
+                    [courseIntervalDate] => 
+                    [courseSalesStartDate] => 
+                    [courseSalesEndDate] => 2019-11-30
+                    [courseReservationMaxTimes] => 1
+                    [courseMinorPlanFlg] => 
+                )
+
+            [2] => Array
+                (
+                    [contractId] => 333883
+                    [status] => 0
+                    [oldContractId] => 100066
+                    [courseId] => 90
+                    [contractDate] => 2018-08-01
+                    [latestDate] => 2021-02-22
+                    [endDate] => 2023-07-31
+                    [times] => 18
+                    [rTimes] => 7
+                    [startYm] => 0
+                    [extensionEndDate] => 
+                    [courseTreatmentType] => 0
+                    [courseType] => 0
+                    [courseName] => 全身33ヵ所パック(SPプラン)
+                    [courseZeroFlg] => 1
+                    [courseNewFlg] => 
+                    [courseIntervalDate] => 
+                    [courseSalesStartDate] => 
+                    [courseSalesEndDate] => 2019-11-30
+                    [courseReservationMaxTimes] => 1
+                    [courseMinorPlanFlg] => 
+                )
+
+            [3] => Array
+                (
+                    [contractId] => 568065
+                    [status] => 0
+                    [oldContractId] => 0
+                    [courseId] => 521
+                    [contractDate] => 2020-12-20
+                    [latestDate] => 0000-00-00
+                    [endDate] => 2021-04-28
+                    [times] => 16
+                    [rTimes] => 0
+                    [startYm] => 0
+                    [extensionEndDate] => 2021-08-26
+                    [courseTreatmentType] => 1
+                    [courseType] => 0
+                    [courseName] => 脂肪分解ケア16回
+                    [courseZeroFlg] => 
+                    [courseNewFlg] => 
+                    [courseIntervalDate] => 
+                    [courseSalesStartDate] => 2021-01-04
+                    [courseSalesEndDate] => 
+                    [courseReservationMaxTimes] => 3
+                    [courseMinorPlanFlg] => 
+                )
+
+            [4] => Array
+                (
+                    [contractId] => 568066
+                    [status] => 0
+                    [oldContractId] => 0
+                    [courseId] => 707
+                    [contractDate] => 2020-12-01
+                    [latestDate] => 0000-00-00
+                    [endDate] => 2021-11-26
+                    [times] => 12
+                    [rTimes] => 0
+                    [startYm] => 0
+                    [extensionEndDate] => 2022-11-21
+                    [courseTreatmentType] => 2
+                    [courseType] => 0
+                    [courseName] => 有福整体 全身12回プラン
+                    [courseZeroFlg] => 
+                    [courseNewFlg] => 
+                    [courseIntervalDate] => 
+                    [courseSalesStartDate] => 2021-01-04
+                    [courseSalesEndDate] => 
+                    [courseReservationMaxTimes] => 3
+                    [courseMinorPlanFlg] => 
+                )
+
+            [5] => Array
+                (
+                    [contractId] => 573866
+                    [status] => 0
+                    [oldContractId] => 0
+                    [courseId] => 110
+                    [contractDate] => 2021-02-01
+                    [latestDate] => 2021-02-22
+                    [endDate] => 2021-07-31
+                    [times] => 3
+                    [rTimes] => 3
+                    [startYm] => 0
+                    [extensionEndDate] => 2022-01-27
+                    [courseTreatmentType] => 0
+                    [courseType] => 0
+                    [courseName] => キレイモ全身脱毛最終仕上げ3回プラン
+                    [courseZeroFlg] => 
+                    [courseNewFlg] => 
+                    [courseIntervalDate] => 60
+                    [courseSalesStartDate] => 2021-02-22
+                    [courseSalesEndDate] => 
+                    [courseReservationMaxTimes] => 1
+                    [courseMinorPlanFlg] => 
+                )
+
+            [6] => Array
+                (
+                    [contractId] => 573867
+                    [status] => 0
+                    [oldContractId] => 0
+                    [courseId] => 110
+                    [contractDate] => 2021-02-01
+                    [latestDate] => 0000-00-00
+                    [endDate] => 2021-07-31
+                    [times] => 3
+                    [rTimes] => 0
+                    [startYm] => 0
+                    [extensionEndDate] => 2022-01-27
+                    [courseTreatmentType] => 0
+                    [courseType] => 0
+                    [courseName] => キレイモ全身脱毛最終仕上げ3回プラン
+                    [courseZeroFlg] => 
+                    [courseNewFlg] => 
+                    [courseIntervalDate] => 60
+                    [courseSalesStartDate] => 2021-02-22
+                    [courseSalesEndDate] => 
+                    [courseReservationMaxTimes] => 1
+                    [courseMinorPlanFlg] => 
+                )
+
+        )
+
+)
+  
+[2021-04-26 19:19:05] local.INFO: running time : 0.65064311027527[s]  
+[2021-04-26 19:19:05] local.INFO: used memory : 0.04583740234375[MB]  
+[2021-04-26 19:19:06] local.INFO: Request Url : https://function.kireimo-dev.jp/api/v1/kireimo/customer/conditionCheck/333883
+Request : 
+Result : Array
+(
+    [apiStatus] => 200
+    [body] => Array
+        (
+            [failedConditions] => 
+            [packLastReservationFlg] => 
+        )
+
+)
+  
+[2021-04-26 19:19:06] local.INFO: running time : 0.47208189964294[s]  
+[2021-04-26 19:19:06] local.INFO: used memory : 0.022941589355469[MB]  
+[2021-04-26 19:19:06] local.INFO: Request Url : https://function.kireimo-dev.jp/api/v1/kireimo/customer/conditionCheck/568065
+Request : 
+Result : Array
+(
+    [apiStatus] => 200
+    [body] => Array
+        (
+            [failedConditions] => 
+            [packLastReservationFlg] => 
+        )
+
+)
+  
+[2021-04-26 19:19:06] local.INFO: running time : 0.29657888412476[s]  
+[2021-04-26 19:19:06] local.INFO: used memory : 0.019378662109375[MB]  
+[2021-04-26 19:19:06] local.INFO: Request Url : https://function.kireimo-dev.jp/api/v1/kireimo/customer/conditionCheck/568066
+Request : 
+Result : Array
+(
+    [apiStatus] => 200
+    [body] => Array
+        (
+            [failedConditions] => 
+            [packLastReservationFlg] => 
+        )
+
+)
+  
+[2021-04-26 19:19:06] local.INFO: running time : 0.21887993812561[s]  
+[2021-04-26 19:19:06] local.INFO: used memory : 0.01690673828125[MB]  
+[2021-04-26 19:19:07] local.INFO: Request Url : https://function.kireimo-dev.jp/api/v1/kireimo/customer/conditionCheck/573866
+Request : 
+Result : Array
+(
+    [apiStatus] => 200
+    [body] => Array
+        (
+            [failedConditions] => Array
+                (
+                    [0] => CONVERSION_TIMES_OVER
+                )
+
+            [packLastReservationFlg] => 1
+        )
+
+)
+  
+[2021-04-26 19:19:07] local.INFO: running time : 0.25724101066589[s]  
+[2021-04-26 19:19:07] local.INFO: used memory : 0.014434814453125[MB]  
+[2021-04-26 19:19:07] local.INFO: Request Url : https://function.kireimo-dev.jp/api/v1/kireimo/customer/conditionCheck/573867
+Request : 
+Result : Array
+(
+    [apiStatus] => 200
+    [body] => Array
+        (
+            [failedConditions] => 
+            [packLastReservationFlg] => 
+        )
+
+)
+  
+[2021-04-26 19:19:07] local.INFO: running time : 0.52754092216492[s]  
+[2021-04-26 19:19:07] local.INFO: used memory : 0.010887145996094[MB]  
+[2021-04-26 19:19:07] local.INFO: Request Url : https://function.kireimo-dev.jp/api/v1/kireimo/customer/162283/reservations
+Request : 
+Result : Array
+(
+    [apiStatus] => 200
+    [count] => 1
+    [body] => Array
+        (
+            [0] => Array
+                (
+                    [reservationId] => 8532992
+                    [contractId] => 333883
+                    [reservationType] => 2
+                    [courseTreatmentType] => 0
+                    [courseName] => 全身33ヵ所パック(SPプラン)
+                    [shopId] => 9
+                    [shopName] => 名古屋栄店
+                    [shopAddress] => 名古屋市中区栄3-32-9　アークロック栄ビル4-5F
+                    [shopPref] => 23
+                    [hopeDate] => 2021-06-26
+                    [hopeTimeCd] => 12
+                    [length] => 3
+                    [status] => 0
+                    [delayTimeStatus] => 0
+                    [delayTimeRegDate] => 0000-00-00 00:00:00
+                )
+
+        )
+
+)
+  
+[2021-04-26 19:19:07] local.INFO: running time : 0.22169899940491[s]  
+[2021-04-26 19:19:07] local.INFO: used memory : 0.010971069335938[MB]  
